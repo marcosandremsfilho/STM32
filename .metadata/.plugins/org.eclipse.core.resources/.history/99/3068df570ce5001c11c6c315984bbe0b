@@ -90,8 +90,8 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3); // Configura o timer 3 com o canal 3
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4); // Configura o timer 3 com o canal 4
+	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -103,14 +103,14 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  	//Aprendendo a ler o pino de entrada
 
-	  	Sensor1 = HAL_GPIO_ReadPin(GPIO_Sens1_GPIO_Port, GPIO_Sens1_Pin); // Lê o valor que está na entrada do sensor 1 e armazena na variável "Sensor1"
-	  	Sensor2 = HAL_GPIO_ReadPin(GPIO_Sens2_GPIO_Port, GPIO_Sens2_Pin); // Lê o valor que está na entrada do sensor 2 e armazena na variável "Sensor2"
-	  	Sensor3 = HAL_GPIO_ReadPin(GPIO_Sens3_GPIO_Port, GPIO_Sens3_Pin); // Lê o valor que está na entrada do sensor 3 e armazena na variável "Sensor3"
+	  	Sensor1 = HAL_GPIO_ReadPin(GPIO_Sens1_GPIO_Port, GPIO_Sens1_Pin);
+	  	Sensor2 = HAL_GPIO_ReadPin(GPIO_Sens2_GPIO_Port, GPIO_Sens2_Pin);
+	  	Sensor3 = HAL_GPIO_ReadPin(GPIO_Sens3_GPIO_Port, GPIO_Sens3_Pin);
 
 	  	//Aprendendo a usar PWM
 
-	  	htim3.Instance->CCR3 = pwm; //PWM enviado para o timer 3 canal 3
-	  	htim3.Instance->CCR4 = 255 - pwm; //PWM enviado para o timer 3 canal 4
+	  	htim3.Instance->CCR3 = pwm;
+	  	htim3.Instance->CCR4 = 255 - pwm;
 
 	  	pwm++;
 	  	HAL_Delay(500);
@@ -119,8 +119,8 @@ int main(void)
 	  		pwm = 0;
 	  	}
 
-	  	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0); //Torna a saída do led 1 em nível lógico baixo
-	  	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1); //Torna a saída do led 2 em nível lógico alto
+	  	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
+	  	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1);
 
 	  	//Aprendendo a escrever no pino de saída
 	  	/*

@@ -1444,3 +1444,85 @@
 2022-06-05 16:21:39,516 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1263mS.
 2022-06-05 16:21:39,516 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
 2022-06-05 16:21:39,516 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-05 16:36:07,963 [INFO] Gpio:254 - dependency for GPIO []
+2022-06-05 16:36:10,945 [INFO] Gpio:254 - dependency for GPIO []
+2022-06-05 16:36:18,327 [INFO] Gpio:254 - dependency for GPIO []
+2022-06-05 16:39:20,590 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-05 16:39:43,744 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-05 16:44:33,756 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 261549232 Bytes (1072693248)
+2022-06-05 16:44:35,852 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 332358080 Bytes (1072693248)
+2022-06-05 16:44:36,085 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2022-06-05 16:44:36,085 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-05 16:44:36,085 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-05 16:44:36,085 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-05 16:44:36,086 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-05 16:44:36,087 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-05 16:44:36,389 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\license.tmp_save
+2022-06-05 16:44:36,503 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\license.tmp
+2022-06-05 16:44:36,558 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\gpio.c_save
+2022-06-05 16:44:36,663 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\gpio.c
+2022-06-05 16:44:36,671 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\gpio.h_save
+2022-06-05 16:44:36,744 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\gpio.h
+2022-06-05 16:44:36,835 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\tim.c_save
+2022-06-05 16:44:36,942 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\tim.c
+2022-06-05 16:44:36,952 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\tim.h_save
+2022-06-05 16:44:37,019 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\tim.h
+2022-06-05 16:44:37,035 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_it.c_save
+2022-06-05 16:44:37,125 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_it.c
+2022-06-05 16:44:37,129 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_it.h_save
+2022-06-05 16:44:37,189 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_it.h
+2022-06-05 16:44:37,198 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-05 16:44:37,272 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_hal_msp.c
+2022-06-05 16:44:37,272 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\system.tmp_save
+2022-06-05 16:44:37,319 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\system.tmp
+2022-06-05 16:44:37,329 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-05 16:44:37,399 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-05 16:44:37,433 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\main.h_save
+2022-06-05 16:44:37,501 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\main.h
+2022-06-05 16:44:37,512 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\main.c_save
+2022-06-05 16:44:37,575 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\main.c
+2022-06-05 16:44:38,112 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 130mS.
+2022-06-05 16:44:38,112 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-05 16:44:38,275 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-05 16:44:39,353 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1241mS.
+2022-06-05 16:44:39,353 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-05 16:44:39,356 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-05 16:46:03,365 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-06-05 16:47:20,971 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 281386672 Bytes (1072693248)
+2022-06-05 16:47:23,531 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 346732032 Bytes (1072693248)
+2022-06-05 16:47:23,745 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8
+2022-06-05 16:47:23,745 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2022-06-05 16:47:23,745 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2022-06-05 16:47:23,745 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2022-06-05 16:47:23,745 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2022-06-05 16:47:23,746 [INFO] CodeGenerator:681 - code generatio: config db path: C:\ST\STM32CubeIDE_1.9.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.5.0.202202251913\\db\
+2022-06-05 16:47:23,901 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\license.tmp_save
+2022-06-05 16:47:23,964 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\license.tmp
+2022-06-05 16:47:23,976 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\gpio.c_save
+2022-06-05 16:47:24,060 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\gpio.c
+2022-06-05 16:47:24,060 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\gpio.h_save
+2022-06-05 16:47:24,098 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\gpio.h
+2022-06-05 16:47:24,129 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\tim.c_save
+2022-06-05 16:47:24,199 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\tim.c
+2022-06-05 16:47:24,216 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\tim.h_save
+2022-06-05 16:47:24,248 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\tim.h
+2022-06-05 16:47:24,264 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_it.c_save
+2022-06-05 16:47:24,318 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_it.c
+2022-06-05 16:47:24,326 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_it.h_save
+2022-06-05 16:47:24,358 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_it.h
+2022-06-05 16:47:24,373 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_hal_msp.c_save
+2022-06-05 16:47:24,421 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\stm32f4xx_hal_msp.c
+2022-06-05 16:47:24,437 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\system.tmp_save
+2022-06-05 16:47:24,472 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\MXTmpFiles\system.tmp
+2022-06-05 16:47:24,480 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_hal_conf.h_save
+2022-06-05 16:47:24,548 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\stm32f4xx_hal_conf.h
+2022-06-05 16:47:24,578 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\main.h_save
+2022-06-05 16:47:24,628 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Inc\main.h
+2022-06-05 16:47:24,639 [INFO] CodeEngine:237 - oldGeneratedFile, D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\main.c_save
+2022-06-05 16:47:24,722 [INFO] CodeEngine:261 - Generated code: D:\GitHub\Aleatorios\STM32\AprendendoSTM\Core\Src\main.c
+2022-06-05 16:47:25,166 [INFO] ProjectBuilder:2913 - Time for Copy HAL[1] : 141mS.
+2022-06-05 16:47:25,166 [INFO] ProjectBuilder:4015 - Project Generator version: 3.16.0
+2022-06-05 16:47:25,437 [INFO] ConfigFileManager:1287 - The Die is : DIE413
+2022-06-05 16:47:26,345 [INFO] ProjectBuilder:4183 - Time for Generating toolchain IDE Files: 1179mS.
+2022-06-05 16:47:26,345 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
+2022-06-05 16:47:26,361 [INFO] ProjectBuilder:2785 - Time for Copy CMSIS : 0mS.
