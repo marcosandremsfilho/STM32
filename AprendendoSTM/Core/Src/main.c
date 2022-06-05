@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "tim.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -45,6 +46,7 @@
 	uint16_t Sensor1;
 	GPIO_PinState Sensor2;
 	GPIO_PinState Sensor3;
+	int pwm;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -86,8 +88,10 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-
+	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -98,11 +102,29 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  	//Aprendendo a ler o pino de entrada
+
 	  	Sensor1 = HAL_GPIO_ReadPin(GPIO_Sens1_GPIO_Port, GPIO_Sens1_Pin);
 	  	Sensor2 = HAL_GPIO_ReadPin(GPIO_Sens2_GPIO_Port, GPIO_Sens2_Pin);
 	  	Sensor3 = HAL_GPIO_ReadPin(GPIO_Sens3_GPIO_Port, GPIO_Sens3_Pin);
-	  	//Aprendendo a escrever no pino de saída
 
+	  	//Aprendendo a usar PWM
+
+	  	htim3.Instance->CCR3 = pwm;
+	  	htim3.Instance->CCR4 = 255 - pwm;
+
+	  	pwm++;
+	  	HAL_Delay(500);
+
+	  	if(pwm == 255) {
+	  		pwm = 0;
+	  	}
+
+	  	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
+	  	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1);
+
+	  	//Aprendendo a escrever no pino de saída
+	  	/*
+	  	if(Sensor1 == 1) {
 		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
 		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 1);
@@ -119,8 +141,50 @@ int main(void)
 		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 1);
 		HAL_Delay(500);
-
-
+	} else if (Sensor2 == 1) {
+		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 1);
+		HAL_Delay(500);
+	} else if (Sensor3 == 1) {
+		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 0);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 0);
+	} else if (Sensor1 == 0 & Sensor2 == 0 & Sensor3 == 0) {
+		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 1);
+		HAL_Delay(500);
+	}
+	*/
 
   }
   /* USER CODE END 3 */
