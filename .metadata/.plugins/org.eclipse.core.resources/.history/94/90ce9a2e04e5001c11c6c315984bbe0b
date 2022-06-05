@@ -42,7 +42,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-	uint16_t Sensor1;
+	GPIO_PinState Sensor1;
 	GPIO_PinState Sensor2;
 	GPIO_PinState Sensor3;
 /* USER CODE END PV */
@@ -103,21 +103,21 @@ int main(void)
 	  	Sensor3 = HAL_GPIO_ReadPin(GPIO_Sens3_GPIO_Port, GPIO_Sens3_Pin);
 	  	//Aprendendo a escrever no pino de saída
 
-		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
-		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 1);
 		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 0);
+		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
 		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1);
 		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 0);
+		HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 0);
 		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 1);
 		HAL_Delay(500);
-		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 0);
+		HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, 0);
 		HAL_Delay(500);
 		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 1);
+		HAL_Delay(500);
+		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 0);
 		HAL_Delay(500);
 
 
