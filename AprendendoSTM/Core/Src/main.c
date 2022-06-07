@@ -112,18 +112,19 @@ int main(void)
 	  	htim3.Instance->CCR3 = pwm; //PWM enviado para o timer 3 canal 3
 	  	htim3.Instance->CCR4 = 255 - pwm; //PWM enviado para o timer 3 canal 4
 
-	  	pwm++;
 	  	HAL_Delay(500);
 
-	  	if(pwm == 255) {
-	  		pwm = 0;
+	  	if(pwm > 0 && pwm < 300) {
+	  		pwm += 10;
+	  	} else {
+	  		pwm = 1;
 	  	}
 
-	  	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0); //Torna a saída do led 1 em nível lógico baixo
-	  	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 1); //Torna a saída do led 2 em nível lógico alto
-
-	  	//Aprendendo a escrever no pino de saída
+	  	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 1); //Torna a saída do led 1 em nível lógico baixo
+	  	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, 0); //Torna a saída do led 2 em nível lógico alto
 	  	/*
+	  	//Aprendendo a escrever no pino de saída
+
 	  	if(Sensor1 == 1) {
 		HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, 0);
 		HAL_Delay(500);
@@ -184,8 +185,8 @@ int main(void)
 		HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, 1);
 		HAL_Delay(500);
 	}
-	*/
 
+	*/
   }
   /* USER CODE END 3 */
 }
