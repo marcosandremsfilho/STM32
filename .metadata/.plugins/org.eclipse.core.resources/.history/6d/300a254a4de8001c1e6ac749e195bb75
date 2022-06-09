@@ -1,0 +1,29 @@
+/*
+ * mainCpp.cpp
+ *
+ *  Created on: Jun 9, 2022
+ *      Author: marco
+ */
+#include "main.h"
+#include "LED.h"
+
+void mainCpp() {
+
+	LED Led_1(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin);
+	Led_1.led_control(1);
+	/*
+	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, GPIO_PIN_RESET);
+	HAL_Delay(500);
+	HAL_GPIO_WritePin(GPIO_Led1_GPIO_Port, GPIO_Led1_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIO_Led2_GPIO_Port, GPIO_Led2_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIO_Led3_GPIO_Port, GPIO_Led3_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(GPIO_Led4_GPIO_Port, GPIO_Led4_Pin, GPIO_PIN_SET);
+	HAL_Delay(500);
+*/
+}
+
+
+

@@ -1,0 +1,11 @@
+#include "LED.h"
+
+LED::LED(GPIO_TypeDef* Port, uint16_t Pin) {
+	Port = _Port;
+	Pin = _Pin;
+}
+
+LED::~LED() {
+
+}
+
