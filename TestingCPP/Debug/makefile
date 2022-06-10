@@ -79,8 +79,8 @@ all: main-build
 main-build: TestingCpp.elf secondary-outputs
 
 # Tool invocations
-TestingCpp.elf TestingCpp.map: $(OBJS) $(USER_OBJS) D:\GitHub\Aleatorios\STM32\TestingCpp\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "TestingCpp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\GitHub\Aleatorios\STM32\TestingCpp\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestingCpp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+TestingCpp.elf TestingCpp.map: $(OBJS) $(USER_OBJS) D:\GitHub\Aleatorios\STM32\TestingCPP\STM32F405RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "TestingCpp.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\GitHub\Aleatorios\STM32\TestingCPP\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestingCpp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
