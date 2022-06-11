@@ -623,3 +623,9 @@ java.lang.IllegalArgumentException: Index out of bounds
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-11 14:12:16.945
+!MESSAGE Indexed 'MotorClass' (24 sources, 125 headers) in 1.38 sec: 7,944 declarations; 39,899 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-11 14:14:03.275
+!MESSAGE Indexed 'MotorClass' (24 sources, 125 headers) in 1.28 sec: 7,944 declarations; 39,899 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0042%)
