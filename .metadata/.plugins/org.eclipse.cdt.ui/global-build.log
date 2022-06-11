@@ -1,6 +1,6 @@
-13:46:19 **** Incremental Build of configuration Debug for project MotorClass ****
+13:58:41 **** Incremental Build of configuration Debug for project MotorClass ****
 make -j8 all 
-arm-none-eabi-g++ "../CPP/Src/mainCpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP/Src/mainCpp.d" -MT"CPP/Src/mainCpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "CPP/Src/mainCpp.o"
+arm-none-eabi-g++ "../CPP/Src/MotorControl.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP/Src/MotorControl.d" -MT"CPP/Src/MotorControl.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "CPP/Src/MotorControl.o"
 arm-none-eabi-g++ -o "MotorClass.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\Aleatorios\STM32\MotorClass\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MotorClass.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 Finished building target: MotorClass.elf
  
@@ -8,7 +8,7 @@ arm-none-eabi-size   MotorClass.elf
 arm-none-eabi-objdump -h -S  MotorClass.elf  > "MotorClass.list"
 arm-none-eabi-objcopy  -O binary  MotorClass.elf  "MotorClass.bin"
    text	   data	    bss	    dec	    hex	filename
-   6420	    128	   1592	   8140	   1fcc	MotorClass.elf
+   6472	    128	   1592	   8192	   2000	MotorClass.elf
 Finished building: default.size.stdout
  
 Finished building: MotorClass.bin

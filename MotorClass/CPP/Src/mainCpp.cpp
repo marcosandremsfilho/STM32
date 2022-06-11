@@ -8,10 +8,10 @@
 #include "MOTOR.h"
 #include "MotorControl.h"
 
-MotorControl M1(LED_Pin1_GPIO_Port, LED_Pin1_Pin);
+MotorControl M1(LED_Pin1_GPIO_Port, LED_Pin1_Pin, LED_Pin2_GPIO_Port, LED_Pin2_Pin);
 
 void mainCpp() {
 	M1.frente(1000);
-	M1.parar(5000);
+	M1.tras(1000);
 }
 

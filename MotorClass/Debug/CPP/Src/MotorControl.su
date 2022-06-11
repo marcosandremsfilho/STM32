@@ -1,4 +1,4 @@
 ../CPP/Src/MotorControl.cpp:5:6:void MotorControl::frente(int)	16	static
-../CPP/Src/MotorControl.cpp:10:6:void MotorControl::parar(int)	16	static
-../CPP/Src/MotorControl.cpp:15:1:MotorControl::~MotorControl()	16	static
-../CPP/Src/MotorControl.cpp:15:1:virtual MotorControl::~MotorControl()	16	static
+../CPP/Src/MotorControl.cpp:11:6:void MotorControl::tras(int)	16	static
+../CPP/Src/MotorControl.cpp:17:1:MotorControl::~MotorControl()	16	static
+../CPP/Src/MotorControl.cpp:17:1:virtual MotorControl::~MotorControl()	16	static

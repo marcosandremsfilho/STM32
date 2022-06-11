@@ -3,12 +3,14 @@
 #include "MOTOR.h"
 
 void MotorControl :: frente(int time) {
-	HAL_GPIO_WritePin(_Port, _Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(_Port1, _Pin1, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(_Port2, _Pin2, GPIO_PIN_SET);
 	HAL_Delay(time);
 }
 
-void MotorControl :: parar(int time) {
-	HAL_GPIO_WritePin(_Port, _Pin, GPIO_PIN_SET);
+void MotorControl :: tras(int time) {
+	HAL_GPIO_WritePin(_Port1, _Pin1, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(_Port2, _Pin2, GPIO_PIN_RESET);
 	HAL_Delay(time);
 }
 
