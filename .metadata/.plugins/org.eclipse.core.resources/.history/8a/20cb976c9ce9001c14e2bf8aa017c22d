@@ -1,0 +1,15 @@
+/*
+ * mainCpp.cpp
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: marco
+ */
+#include "main.h"
+#include "MOTOR.h"
+
+MOTOR M1()
+
+void mainCpp() {
+
+}
+

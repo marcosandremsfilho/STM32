@@ -1,0 +1,17 @@
+/*
+ * directions.h
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: marco
+ */
+
+#ifndef DIRECTIONS_H_
+#define DIRECTIONS_H_
+
+class directions {
+public:
+	directions();
+	virtual ~directions();
+};
+
+#endif /* DIRECTIONS_H_ */

@@ -1,0 +1,5 @@
+D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MotorControl.h:9:2:MotorControl::MotorControl(GPIO_TypeDef*, uint16_t)	24	static
+../CPP/Src/mainCpp.cpp:13:6:void mainCpp()	8	static
+../CPP/Src/mainCpp.cpp:16:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../CPP/Src/mainCpp.cpp:16:1:cpp)	8	static
+../CPP/Src/mainCpp.cpp:16:1:cpp)	8	static

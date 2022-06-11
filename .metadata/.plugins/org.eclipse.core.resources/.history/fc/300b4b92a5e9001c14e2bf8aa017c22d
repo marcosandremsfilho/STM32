@@ -1,0 +1,13 @@
+#include "main.h"
+#include "MotorControl.h"
+#include "MOTOR.h"
+
+void MotorControl :: frente(int time) {
+	HAL_GPIO_WritePin(_Port, _Pin, (GPIO_PinState) control);
+	HAL_Delay(time);
+}
+
+MotorControl::~MotorControl() {
+	// TODO Auto-generated destructor stub
+}
+

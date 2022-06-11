@@ -1,0 +1,14 @@
+#include "main.h"
+#include "MotorControl.h"
+#include "MOTOR.h"
+
+MotorControl::MotorControl(MOTOR M1, MOTOR M2) {
+	_M1 = M1;
+	_M2 = M2;
+
+}
+
+MotorControl::~MotorControl() {
+	// TODO Auto-generated destructor stub
+}
+

@@ -1,0 +1,9 @@
+#include "main.h"
+#include "MOTOR.h"
+
+void frente(int time) {
+	M1.MotorControl(0);
+	HAL_Delay(time);
+}
+
+

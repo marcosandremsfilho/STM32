@@ -1,0 +1,14 @@
+/*
+ * MotorDirection.cpp
+ *
+ *  Created on: Jun 11, 2022
+ *      Author: marco
+ */
+
+void Frente(int time) {
+	motor_1.MotorControl(1);
+	motor_2.MotorControl(1);
+	HAL_Delay(time);
+}
+
+

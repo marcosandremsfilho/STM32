@@ -1,0 +1,4 @@
+../CPP/Src/MOTOR.cpp:3:1:MOTOR::MOTOR(GPIO_TypeDef*, uint16_t)	24	static
+../CPP/Src/MOTOR.cpp:8:6:void MOTOR::MotorControl(int)	16	static
+../CPP/Src/MOTOR.cpp:12:1:MOTOR::~MOTOR()	16	static
+../CPP/Src/MOTOR.cpp:12:1:virtual MOTOR::~MOTOR()	16	static

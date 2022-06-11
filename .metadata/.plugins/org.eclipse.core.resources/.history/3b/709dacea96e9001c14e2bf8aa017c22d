@@ -1,0 +1,18 @@
+/*
+ * MOTOR.cpp
+ *
+ *  Created on: 11 de jun de 2022
+ *      Author: marco
+ */
+
+#include <MOTOR.h>
+
+MOTOR::MOTOR() {
+	// TODO Auto-generated constructor stub
+
+}
+
+MOTOR::~MOTOR() {
+	// TODO Auto-generated destructor stub
+}
+

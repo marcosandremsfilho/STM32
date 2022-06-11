@@ -88,10 +88,10 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_PWMN_Start(&htim3, TIM_CHANNEL_3);
-  HAL_TIM_PWMN_Start(&htim3, TIM_CHANNEL_4);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
+  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
   /* USER CODE END 2 */
-
+  int PWM;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -100,7 +100,10 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	 mainCpp();
-
+	// htim3.Instance->CCR3 = PWM;
+	// htim3.Instance->CCR4 = 255 - PWM;
+	// PWM+=10;
+	// HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }
