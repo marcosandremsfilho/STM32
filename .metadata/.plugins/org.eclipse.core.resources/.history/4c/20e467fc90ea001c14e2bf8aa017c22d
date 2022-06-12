@@ -1,0 +1,10 @@
+#include "main.h"
+#include "SENSOR.h"
+
+SENSOR sensor_Direita(Sensor_Dir_GPIO_Port, Sensor_Dir_Pin);
+SENSOR sensor_Centro();
+void mainCpp() {
+
+}
+
+

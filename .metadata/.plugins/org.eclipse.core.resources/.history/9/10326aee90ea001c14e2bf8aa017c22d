@@ -1,0 +1,9 @@
+#include "main.h"
+#include "SENSOR.h"
+
+SENSOR sensor_Direita();
+void mainCpp() {
+
+}
+
+
