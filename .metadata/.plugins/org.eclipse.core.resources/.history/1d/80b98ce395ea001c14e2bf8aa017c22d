@@ -1,0 +1,13 @@
+#include "main.h"
+
+#ifndef SENSORIR_H_
+#define SENSORIR_H_
+
+class SensorIR {
+
+public:
+	SensorIR();
+	virtual ~SensorIR();
+};
+
+#endif /* SENSORIR_H_ */

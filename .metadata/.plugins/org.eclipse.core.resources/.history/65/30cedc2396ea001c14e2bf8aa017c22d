@@ -1,0 +1,21 @@
+/*
+ * SensorIR.cpp
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+
+#include "SensorIR.h"
+#include "main.h"
+SensorIR::SensorIR(GPIO_TypeDef* Port, uint16_t Pin) {
+	// TODO Auto-generated constructor stub
+	_Port = Port;
+	_Pin = Pin;
+}
+
+void SensorIR :: leSensor();
+
+SensorIR::~SensorIR() {
+	// TODO Auto-generated destructor stub
+}
+

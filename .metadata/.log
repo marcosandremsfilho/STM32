@@ -635,3 +635,12 @@ java.lang.IllegalArgumentException: Index out of bounds
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-06-12 17:34:27.797
 !MESSAGE Indexed 'SensorClass' (22 sources, 116 headers) in 1.05 sec: 6,107 declarations; 22,059 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0071%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-12 17:53:41.943
+!MESSAGE Indexed 'SensorIRClass' (21 sources, 81 headers) in 1.12 sec: 4,291 declarations; 17,442 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0092%)
+
+!ENTRY com.st.stm32cube.ide.mcu.build 1 1 2022-06-12 18:17:23.520
+!MESSAGE Converted project SensorIRClass to C++ in 75 (ms)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-06-12 18:17:52.705
+!MESSAGE Indexed 'SensorIRClass' (23 sources, 117 headers) in 1.52 sec: 6,105 declarations; 21,964 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0071%)

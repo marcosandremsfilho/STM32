@@ -1,0 +1,17 @@
+/*
+ * SensorIR.h
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+
+#ifndef SENSORIR_H_
+#define SENSORIR_H_
+
+class SensorIR {
+public:
+	SensorIR();
+	virtual ~SensorIR();
+};
+
+#endif /* SENSORIR_H_ */
