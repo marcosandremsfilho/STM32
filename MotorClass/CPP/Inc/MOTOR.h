@@ -9,9 +9,10 @@ protected:
 	GPIO_TypeDef* _Port2;
 	uint16_t _Pin1, _Pin2;
 	TIM_HandleTypeDef* _htim;
+	int _channel;
 
 public:
-	MOTOR(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t, TIM_HandleTypeDef*);
+	MOTOR(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t, TIM_HandleTypeDef*, int);
 	void CW(int);
 	void CCW(int);
 	virtual ~MOTOR() { }

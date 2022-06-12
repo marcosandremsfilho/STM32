@@ -63,8 +63,22 @@ void mainCpp();
 #define LED_Pin1_GPIO_Port GPIOC
 #define LED_Pin2_Pin GPIO_PIN_5
 #define LED_Pin2_GPIO_Port GPIOC
-#define LED_Pin3_Pin GPIO_PIN_1
+#define LED_Pin3_Pin GPIO_PIN_0
 #define LED_Pin3_GPIO_Port GPIOB
+#define LED_Pin4_Pin GPIO_PIN_1
+#define LED_Pin4_GPIO_Port GPIOB
+#define MOTOR2_Pin2_Pin GPIO_PIN_8
+#define MOTOR2_Pin2_GPIO_Port GPIOC
+#define MOTOR2_Pin1_Pin GPIO_PIN_9
+#define MOTOR2_Pin1_GPIO_Port GPIOC
+#define MOTOR2_PWM_Pin GPIO_PIN_8
+#define MOTOR2_PWM_GPIO_Port GPIOA
+#define MOTOR1_PWM_Pin GPIO_PIN_9
+#define MOTOR1_PWM_GPIO_Port GPIOA
+#define MOTOR1_Pin2_Pin GPIO_PIN_10
+#define MOTOR1_Pin2_GPIO_Port GPIOA
+#define MOTOR1_Pin1_Pin GPIO_PIN_11
+#define MOTOR1_Pin1_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
