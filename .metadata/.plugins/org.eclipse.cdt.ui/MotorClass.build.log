@@ -1,4 +1,4 @@
-14:48:27 **** Incremental Build of configuration Debug for project MotorClass ****
+15:24:17 **** Incremental Build of configuration Debug for project MotorClass ****
 make -j8 all 
 arm-none-eabi-g++ "../CPP/Src/mainCpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc" -I"D:/GitHub/Aleatorios/STM32/MotorClass/Core/Src" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP/Src/mainCpp.d" -MT"CPP/Src/mainCpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "CPP/Src/mainCpp.o"
 arm-none-eabi-g++ -o "MotorClass.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\Aleatorios\STM32\MotorClass\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MotorClass.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
@@ -8,7 +8,7 @@ arm-none-eabi-size   MotorClass.elf
 arm-none-eabi-objdump -h -S  MotorClass.elf  > "MotorClass.list"
 arm-none-eabi-objcopy  -O binary  MotorClass.elf  "MotorClass.bin"
    text	   data	    bss	    dec	    hex	filename
-   9448	    132	   1668	  11248	   2bf0	MotorClass.elf
+   9612	    132	   1700	  11444	   2cb4	MotorClass.elf
 Finished building: default.size.stdout
  
 Finished building: MotorClass.bin
@@ -16,5 +16,5 @@ Finished building: MotorClass.bin
 Finished building: MotorClass.list
  
 
-14:48:28 Build Finished. 0 errors, 0 warnings. (took 721ms)
+15:24:18 Build Finished. 0 errors, 0 warnings. (took 689ms)
 

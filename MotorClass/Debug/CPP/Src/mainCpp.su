@@ -1,5 +1,6 @@
-D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MotorControl.h:9:2:MotorControl::MotorControl(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t)	32	static
-../CPP/Src/mainCpp.cpp:13:6:void mainCpp()	8	static
-../CPP/Src/mainCpp.cpp:21:1:void __static_initialization_and_destruction_0(int, int)	24	static
-../CPP/Src/mainCpp.cpp:21:1:cpp)	8	static
-../CPP/Src/mainCpp.cpp:21:1:cpp)	8	static
+D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h:17:10:MOTOR::~MOTOR()	16	static
+D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h:17:10:virtual MOTOR::~MOTOR()	16	static
+../CPP/Src/mainCpp.cpp:12:6:void mainCpp()	8	static
+../CPP/Src/mainCpp.cpp:23:1:void __static_initialization_and_destruction_0(int, int)	24	static
+../CPP/Src/mainCpp.cpp:23:1:cpp)	8	static
+../CPP/Src/mainCpp.cpp:23:1:cpp)	8	static

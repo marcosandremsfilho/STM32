@@ -6,17 +6,17 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../CPP/Src/MOTOR.cpp \
-../CPP/Src/MotorControl.cpp \
+../CPP/Src/RobotDirection.cpp \
 ../CPP/Src/mainCpp.cpp 
 
 OBJS += \
 ./CPP/Src/MOTOR.o \
-./CPP/Src/MotorControl.o \
+./CPP/Src/RobotDirection.o \
 ./CPP/Src/mainCpp.o 
 
 CPP_DEPS += \
 ./CPP/Src/MOTOR.d \
-./CPP/Src/MotorControl.d \
+./CPP/Src/RobotDirection.d \
 ./CPP/Src/mainCpp.d 
 
 
@@ -27,7 +27,7 @@ CPP/Src/%.o CPP/Src/%.su: ../CPP/Src/%.cpp CPP/Src/subdir.mk
 clean: clean-CPP-2f-Src
 
 clean-CPP-2f-Src:
-	-$(RM) ./CPP/Src/MOTOR.d ./CPP/Src/MOTOR.o ./CPP/Src/MOTOR.su ./CPP/Src/MotorControl.d ./CPP/Src/MotorControl.o ./CPP/Src/MotorControl.su ./CPP/Src/mainCpp.d ./CPP/Src/mainCpp.o ./CPP/Src/mainCpp.su
+	-$(RM) ./CPP/Src/MOTOR.d ./CPP/Src/MOTOR.o ./CPP/Src/MOTOR.su ./CPP/Src/RobotDirection.d ./CPP/Src/RobotDirection.o ./CPP/Src/RobotDirection.su ./CPP/Src/mainCpp.d ./CPP/Src/mainCpp.o ./CPP/Src/mainCpp.su
 
 .PHONY: clean-CPP-2f-Src
 

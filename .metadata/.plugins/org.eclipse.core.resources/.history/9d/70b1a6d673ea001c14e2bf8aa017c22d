@@ -1,0 +1,22 @@
+/*
+ * RobotControl.h
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+#include "main.h"
+#include "MOTOR.h"
+
+#ifndef ROBOTCONTROL_H_
+#define ROBOTCONTROL_H_
+
+class RobotControl : public MOTOR {
+public:
+	RobotControl();
+	void frente();
+	void tras();
+
+	virtual ~RobotControl();
+};
+
+#endif /* ROBOTCONTROL_H_ */

@@ -27,7 +27,7 @@ CPP/Src/mainCpp.o: ../CPP/Src/mainCpp.cpp ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
  D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h \
- D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MotorControl.h \
+ D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/RobotDirection.h \
  D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -58,5 +58,5 @@ CPP/Src/mainCpp.o: ../CPP/Src/mainCpp.cpp ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h:
-D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MotorControl.h:
+D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/RobotDirection.h:
 D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h:

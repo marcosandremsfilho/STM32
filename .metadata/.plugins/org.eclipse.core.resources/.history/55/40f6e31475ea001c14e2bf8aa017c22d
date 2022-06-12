@@ -1,0 +1,22 @@
+/*
+ * RobotControl.h
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+#include "main.h"
+#include "MOTOR.h"
+
+#ifndef ROBOTCONTROL_H_
+#define ROBOTCONTROL_H_
+
+class RobotControl : public MOTOR {
+public:
+	RobotControl(GPIO_TypeDef* Port1, uint16_t Pin1, GPIO_TypeDef* Port2, uint16_t Pin2, TIM_HandleTypeDef* htim) : MOTOR{Port1, Pin1, Port2, Pin2, htim} { }
+	void frente();
+	void tras();
+
+	virtual ~RobotControl();
+};
+
+#endif /* ROBOTCONTROL_H_ */

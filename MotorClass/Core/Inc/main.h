@@ -56,7 +56,6 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
 void mainCpp();
-void pwm();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
@@ -64,6 +63,8 @@ void pwm();
 #define LED_Pin1_GPIO_Port GPIOC
 #define LED_Pin2_Pin GPIO_PIN_5
 #define LED_Pin2_GPIO_Port GPIOC
+#define LED_Pin3_Pin GPIO_PIN_1
+#define LED_Pin3_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

@@ -1,0 +1,25 @@
+/*
+ * RobotDirection.h
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+#include "main.h"
+#include "MOTOR.h"
+
+#ifndef ROBOTDIRECTION_H_
+#define ROBOTDIRECTION_H_
+
+class RobotDirection : public MOTOR{
+protected:
+	int _PWM, _time;
+public:
+	void forward(MOTOR, MOTOR, int, int);
+	void backward(MOTOR, MOTOR, int, int);
+	void left(MOTOR, MOTOR, int, int);
+	void right(MOTOR, MOTOR, int, int);
+
+	virtual ~RobotDirection();
+};
+
+#endif /* ROBOTDIRECTION_H_ */

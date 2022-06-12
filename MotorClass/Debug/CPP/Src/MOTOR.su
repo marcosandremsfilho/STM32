@@ -1,3 +1,5 @@
-../CPP/Src/MOTOR.cpp:4:1:MOTOR::MOTOR(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t)	24	static
-../CPP/Src/MOTOR.cpp:11:1:MOTOR::~MOTOR()	16	static
-../CPP/Src/MOTOR.cpp:11:1:virtual MOTOR::~MOTOR()	16	static
+D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h:17:10:MOTOR::~MOTOR()	16	static
+D:/GitHub/Aleatorios/STM32/MotorClass/CPP/Inc/MOTOR.h:17:10:virtual MOTOR::~MOTOR()	16	static
+../CPP/Src/MOTOR.cpp:4:1:MOTOR::MOTOR(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t, TIM_HandleTypeDef*)	24	static
+../CPP/Src/MOTOR.cpp:12:6:void MOTOR::CW(int)	16	static
+../CPP/Src/MOTOR.cpp:18:6:void MOTOR::CCW(int)	16	static

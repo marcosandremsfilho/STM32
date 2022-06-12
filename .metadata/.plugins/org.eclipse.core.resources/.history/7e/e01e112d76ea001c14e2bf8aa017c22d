@@ -1,0 +1,22 @@
+#include "main.h"
+#include "MOTOR.h"
+
+extern TIM_HandleTypeDef htim3;
+
+MOTOR M1(LED_Pin1_GPIO_Port, LED_Pin1_Pin, LED_Pin2_GPIO_Port, LED_Pin2_Pin, &htim3);
+
+int aux = 255;
+
+void mainCpp() {
+	M1.frente(1000, aux);
+	M1.tras(1000, aux);
+
+	aux-=50;
+
+	HAL_Delay(500);
+
+	if(aux < 0) {
+		aux =256;
+	}
+}
+

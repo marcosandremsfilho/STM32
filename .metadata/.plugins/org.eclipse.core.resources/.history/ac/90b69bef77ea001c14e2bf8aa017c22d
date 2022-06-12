@@ -1,0 +1,40 @@
+/*
+ * RobotDirection.cpp
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+
+#include "RobotDirection.h"
+
+RobotDirection::RobotDirection() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void forward(MOTOR M1, MOTOR M2, int time, int PWM) {
+	M1.CW(PWM);
+	M2.CW(PWM);
+
+	HAL_Delay(time);
+}
+
+void backward(MOTOR M1, MOTOR M2, int time, int PWM) {
+	M1.CCW(PWM);
+	M2.CCW(PWM);
+
+	HAL_Delay(time);
+}
+
+void left(MOTOR M1, MOTOR M2, int time, int PWM) {
+
+}
+
+void right(MOTOR M1, MOTOR M2, int time, int PWM) {
+
+}
+
+RobotDirection::~RobotDirection() {
+	// TODO Auto-generated destructor stub
+}
+

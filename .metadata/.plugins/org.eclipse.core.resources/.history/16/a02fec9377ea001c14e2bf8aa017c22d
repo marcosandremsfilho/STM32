@@ -1,0 +1,34 @@
+/*
+ * RobotDirection.cpp
+ *
+ *  Created on: Jun 12, 2022
+ *      Author: marco
+ */
+
+#include "RobotDirection.h"
+
+RobotDirection::RobotDirection() {
+	// TODO Auto-generated constructor stub
+
+}
+
+void forward(MOTOR M1, MOTOR M2, int time, int pwm) {
+
+}
+
+void backward(MOTOR, MOTOR, int, int) {
+
+}
+
+void left(MOTOR, MOTOR, int, int) {
+
+}
+
+void right(MOTOR, MOTOR, int, int) {
+
+}
+
+RobotDirection::~RobotDirection() {
+	// TODO Auto-generated destructor stub
+}
+

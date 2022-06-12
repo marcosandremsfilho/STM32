@@ -1,5 +1,5 @@
 "./CPP/Src/MOTOR.o"
-"./CPP/Src/MotorControl.o"
+"./CPP/Src/RobotDirection.o"
 "./CPP/Src/mainCpp.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32f4xx_hal_msp.o"
