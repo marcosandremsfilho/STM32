@@ -1,7 +1,17 @@
-21:11:29 **** Incremental Build of configuration Debug for project SensorClass ****
+10:00:36 **** Incremental Build of configuration Debug for project SensorClass ****
 make -j8 all 
+arm-none-eabi-g++ "../CPP/Src/mainCpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/GitHub/Aleatorios/STM32/SensorClass/CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP/Src/mainCpp.d" -MT"CPP/Src/mainCpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "CPP/Src/mainCpp.o"
+arm-none-eabi-g++ -o "SensorClass.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\Aleatorios\STM32\SensorClass\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SensorClass.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SensorClass.elf
+ 
 arm-none-eabi-size   SensorClass.elf 
+arm-none-eabi-objdump -h -S  SensorClass.elf  > "SensorClass.list"
+arm-none-eabi-objcopy  -O binary  SensorClass.elf  "SensorClass.bin"
    text	   data	    bss	    dec	    hex	filename
-   6296	    128	   1624	   8048	   1f70	SensorClass.elf
+   6932	    128	   1672	   8732	   221c	SensorClass.elf
 Finished building: default.size.stdout
+ 
+Finished building: SensorClass.bin
+ 
+Finished building: SensorClass.list
  

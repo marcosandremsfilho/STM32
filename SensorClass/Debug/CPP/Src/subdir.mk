@@ -5,14 +5,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../CPP/Src/LED.cpp \
 ../CPP/Src/SENSOR.cpp \
 ../CPP/Src/mainCpp.cpp 
 
 OBJS += \
+./CPP/Src/LED.o \
 ./CPP/Src/SENSOR.o \
 ./CPP/Src/mainCpp.o 
 
 CPP_DEPS += \
+./CPP/Src/LED.d \
 ./CPP/Src/SENSOR.d \
 ./CPP/Src/mainCpp.d 
 
@@ -24,7 +27,7 @@ CPP/Src/%.o CPP/Src/%.su: ../CPP/Src/%.cpp CPP/Src/subdir.mk
 clean: clean-CPP-2f-Src
 
 clean-CPP-2f-Src:
-	-$(RM) ./CPP/Src/SENSOR.d ./CPP/Src/SENSOR.o ./CPP/Src/SENSOR.su ./CPP/Src/mainCpp.d ./CPP/Src/mainCpp.o ./CPP/Src/mainCpp.su
+	-$(RM) ./CPP/Src/LED.d ./CPP/Src/LED.o ./CPP/Src/LED.su ./CPP/Src/SENSOR.d ./CPP/Src/SENSOR.o ./CPP/Src/SENSOR.su ./CPP/Src/mainCpp.d ./CPP/Src/mainCpp.o ./CPP/Src/mainCpp.su
 
 .PHONY: clean-CPP-2f-Src
 

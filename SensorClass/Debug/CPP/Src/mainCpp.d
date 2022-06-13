@@ -24,7 +24,8 @@ CPP/Src/mainCpp.o: ../CPP/Src/mainCpp.cpp ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
- D:/GitHub/Aleatorios/STM32/SensorClass/CPP/Inc/SENSOR.h
+ D:/GitHub/Aleatorios/STM32/SensorClass/CPP/Inc/SENSOR.h \
+ D:/GitHub/Aleatorios/STM32/SensorClass/CPP/Inc/LED.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -52,3 +53,4 @@ CPP/Src/mainCpp.o: ../CPP/Src/mainCpp.cpp ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 D:/GitHub/Aleatorios/STM32/SensorClass/CPP/Inc/SENSOR.h:
+D:/GitHub/Aleatorios/STM32/SensorClass/CPP/Inc/LED.h:

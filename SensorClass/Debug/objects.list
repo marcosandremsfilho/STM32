@@ -1,3 +1,4 @@
+"./CPP/Src/LED.o"
 "./CPP/Src/SENSOR.o"
 "./CPP/Src/mainCpp.o"
 "./Core/Src/main.o"

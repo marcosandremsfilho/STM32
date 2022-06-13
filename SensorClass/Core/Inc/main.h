@@ -57,6 +57,14 @@ void mainCpp();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Led_1_Pin GPIO_PIN_4
+#define Led_1_GPIO_Port GPIOC
+#define Led_2_Pin GPIO_PIN_5
+#define Led_2_GPIO_Port GPIOC
+#define Led_3_Pin GPIO_PIN_0
+#define Led_3_GPIO_Port GPIOB
+#define Led_4_Pin GPIO_PIN_1
+#define Led_4_GPIO_Port GPIOB
 #define Sensor_Esq_Pin GPIO_PIN_2
 #define Sensor_Esq_GPIO_Port GPIOD
 #define Sensor_Cen_Pin GPIO_PIN_4
