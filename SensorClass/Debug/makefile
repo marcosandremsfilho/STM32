@@ -68,6 +68,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 SensorClass.list \
 
+OBJCOPY_BIN += \
+SensorClass.bin \
+
 
 # All Target
 all: main-build
@@ -91,12 +94,17 @@ SensorClass.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+SensorClass.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "SensorClass.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) SensorClass.elf SensorClass.list SensorClass.map default.size.stdout
+	-$(RM) SensorClass.bin SensorClass.elf SensorClass.list SensorClass.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
