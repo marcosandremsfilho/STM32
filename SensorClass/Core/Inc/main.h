@@ -57,6 +57,12 @@ void mainCpp();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Sensor_Dir_Pin GPIO_PIN_13
+#define Sensor_Dir_GPIO_Port GPIOC
+#define Sensor_Cen_Pin GPIO_PIN_14
+#define Sensor_Cen_GPIO_Port GPIOC
+#define Sensor_Esq_Pin GPIO_PIN_15
+#define Sensor_Esq_GPIO_Port GPIOC
 #define Led_1_Pin GPIO_PIN_4
 #define Led_1_GPIO_Port GPIOC
 #define Led_2_Pin GPIO_PIN_5
@@ -65,12 +71,6 @@ void mainCpp();
 #define Led_3_GPIO_Port GPIOB
 #define Led_4_Pin GPIO_PIN_1
 #define Led_4_GPIO_Port GPIOB
-#define Sensor_Esq_Pin GPIO_PIN_2
-#define Sensor_Esq_GPIO_Port GPIOD
-#define Sensor_Cen_Pin GPIO_PIN_4
-#define Sensor_Cen_GPIO_Port GPIOB
-#define Sensor_Dir_Pin GPIO_PIN_6
-#define Sensor_Dir_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

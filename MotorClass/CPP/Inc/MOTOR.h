@@ -15,6 +15,7 @@ public:
 	MOTOR(GPIO_TypeDef*, uint16_t, GPIO_TypeDef*, uint16_t, TIM_HandleTypeDef*, int);
 	void CW(int);
 	void CCW(int);
+	void MotorOff();
 	virtual ~MOTOR() { }
 };
 

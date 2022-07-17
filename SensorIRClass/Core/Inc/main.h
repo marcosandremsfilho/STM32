@@ -57,8 +57,6 @@ void mainCpp();
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define SensorIR_Pin GPIO_PIN_8
-#define SensorIR_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

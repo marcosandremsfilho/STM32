@@ -1,8 +1,0 @@
-#include "main.h"
-
-void pwm() {
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
-}
-
-

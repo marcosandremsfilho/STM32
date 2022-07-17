@@ -38,3 +38,8 @@ void MOTOR :: CCW(int PWM) {
 		_htim->Instance->CCR4 = PWM;
 	}
 }
+
+void MOTOR :: MotorOff() {
+	HAL_GPIO_WritePin(_Port1, _Pin1, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(_Port2, _Pin2, GPIO_PIN_SET);
+}

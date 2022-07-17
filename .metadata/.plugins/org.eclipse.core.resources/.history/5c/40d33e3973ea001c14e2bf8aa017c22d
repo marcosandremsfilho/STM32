@@ -1,8 +1,0 @@
-#include "main.h"
-#include "MotorControl.h"
-#include "MOTOR.h"
-
-MotorControl::~MotorControl() {
-
-}
-

@@ -40,6 +40,12 @@ void mainCpp() {
 		led_2.led_control(1);
 		led_3.led_control(1);
 		led_4.led_control(1);
+		HAL_Delay(500);
+		led_1.led_control(0);
+		led_2.led_control(0);
+		led_3.led_control(0);
+		led_4.led_control(0);
+		HAL_Delay(500);
 	}
 }
 

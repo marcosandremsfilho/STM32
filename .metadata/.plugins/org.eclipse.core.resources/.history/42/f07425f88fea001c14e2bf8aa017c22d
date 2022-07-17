@@ -1,7 +1,0 @@
-#include "main.h"
-
-void mainCpp() {
-	HAL_GPIO_ReadPin(GPIOx, GPIO_Pin)
-}
-
-

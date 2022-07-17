@@ -1,20 +1,10 @@
-15:22:35 **** Incremental Build of configuration Debug for project TestingCpp ****
+15:01:14 **** Incremental Build of configuration Debug for project TestingCpp ****
 make -j8 all 
-arm-none-eabi-g++ "../CPP/Src/mainCpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/GitHub/Aleatorios/STM32/TestingCPP/CPP/Inc" -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"CPP/Src/mainCpp.d" -MT"CPP/Src/mainCpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "CPP/Src/mainCpp.o"
-arm-none-eabi-g++ -o "TestingCpp.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\GitHub\Aleatorios\STM32\TestingCPP\STM32F405RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TestingCpp.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
-Finished building target: TestingCpp.elf
- 
 arm-none-eabi-size   TestingCpp.elf 
-arm-none-eabi-objdump -h -S  TestingCpp.elf  > "TestingCpp.list"
-arm-none-eabi-objcopy  -O binary  TestingCpp.elf  "TestingCpp.bin"
    text	   data	    bss	    dec	    hex	filename
    6452	    128	   1624	   8204	   200c	TestingCpp.elf
 Finished building: default.size.stdout
  
-Finished building: TestingCpp.bin
- 
-Finished building: TestingCpp.list
- 
 
-15:22:36 Build Finished. 0 errors, 0 warnings. (took 1s.276ms)
+15:01:14 Build Finished. 0 errors, 0 warnings. (took 274ms)
 
