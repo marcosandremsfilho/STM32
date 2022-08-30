@@ -94,7 +94,7 @@ int main(void)
   {
     /* USER CODE END WHILE */
 	  mainCpp();
-    /* USER CODE BEGIN 3 */
+	/* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
